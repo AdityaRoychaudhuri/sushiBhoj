@@ -1,0 +1,113 @@
+.header__nav{
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo{
+    display: flex;
+    flex:1;
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.header__logo h4{
+    padding-left: 30px;
+    font-family: var(--playfair-display);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header__menu, .header__menu-mobile{
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    list-style:none;
+}
+
+.header__menu li{
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header__menu img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.header__menu-mobile{
+    display: none;
+    position: relative;
+    gap: 20px;
+}
+
+.header__menu-mobile img{
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+}
+
+#menu-icon {
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#menu-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.mobile-dropdown {
+  position: absolute;
+  top: 60px; /* Adjust based on nav height */
+  right: 16px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-dropdown li {
+  padding: 10px 20px;
+}
+
+.mobile-dropdown li a {
+  color: black;
+  text-decoration: none;
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 500;
+  display: block;
+}
+
+.mobile-dropdown.hidden {
+  display: none;
+}
+
+/* Hide dropdown on larger screens */
+@media screen and (min-width: 768px) {
+  .mobile-dropdown {
+    display: none !important;
+  }
+}
