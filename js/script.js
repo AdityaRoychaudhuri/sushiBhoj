@@ -1,5 +1,5 @@
-// import check from '../assets/check.svg'
-// import star from '../assets/star.svg'
+import check from '../assets/check.svg'
+import star from '../assets/star.svg'
 import sushi12 from '../assets/assets/sushi-12.png'
 import sushi11 from '../assets/assets/sushi-11.png'
 import sushi10 from '../assets/assets/sushi-10.png'
@@ -72,8 +72,6 @@ document.addEventListener("DOMContentLoaded",function(){
                 menuIcon.src = "assets/assets/close.svg"
             }
         });
-
-        // Optional: Close dropdown when clicking outside
         document.addEventListener("click", function (e) {
             if (!toggleBtn.contains(e.target) && !hiddenMenu.contains(e.target)) {
                 hiddenMenu.classList.add("hidden");

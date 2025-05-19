@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
-/* other css file imports */
 @import url("sections/header.css");
 @import url("sections/hero.css");
 @import url("sections/about.css");
@@ -10,7 +9,6 @@
 @import url("sections/subscribe.css");
 @import url("sections/footer.css");
 
-/* CSS variables for reusablity across all files (including above imported) */
 :root {
   --playfair-display: "Playfair Display", serif;
   --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
@@ -94,18 +92,15 @@ a {
   margin: 32px 0px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .sushi__hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .sushi__hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* START: about us media queries */
 @media screen and (max-width: 1024px) {
   .about-us {
     flex-direction: column;
@@ -162,10 +157,8 @@ a {
     padding: 32px;
   }
 }
-/* END: about us media queries */
 
 
-/* START: header media querie */
 @media screen and (max-width: 900px) {
   .header__nav {
     background: var(--primary-color);
@@ -185,9 +178,8 @@ a {
     padding-left: 0;
   }
 }
-/* END: header media queries */
 
-/* START: hero media queries */
+
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
@@ -234,9 +226,8 @@ a {
     padding: 32px;
   }
 }
-/* END: hero media queries */
 
-/* START: popular media queries */
+
 @media screen and (max-width: 550px) {
   .popular-foods {
     padding: 64px 32px;
@@ -247,9 +238,8 @@ a {
     min-width: 100%;
   }
 }
-/* END: popular media queries */
 
-/* START: subscribe media queries */
+
 @media screen and (max-width: 550px) {
   .subscription {
     padding: 64px 32px;
@@ -283,9 +273,8 @@ a {
     min-width: 100%;
   }
 }
-/* END: subscribe media queries */
 
-/* START: trending media queries */
+
 @media screen and (max-width: 1024px) {
   .trending-sushi {
     flex-direction: column;
